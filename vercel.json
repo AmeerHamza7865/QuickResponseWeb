@@ -1,0 +1,21 @@
+{
+  "builds": [
+    {
+      "src": "angular.json",
+      "use": "@vercel/angular",
+      "config": {
+        "zeroConfig": true
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "destination": "/index.html",
+      "status": 200
+    }
+  ],
+  "env": {
+    "VITE_API_URL": "@vite_api_url"
+  }
+}
